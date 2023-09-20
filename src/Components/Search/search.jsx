@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './search.css'
 import useDebounce from '../../hooks/useDebounce';
 function Search({updateSearchTerm}){
-   const debounceCallBack=useDebounce((e)=>updateSearchTerm(e.target.value));
+   const debounceCallBack=useDebounce((e)=>updateSearchTerm(e.target.value),500);
    return (
          <div className="search-wrapper">
         <input

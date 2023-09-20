@@ -1,4 +1,4 @@
-function useDebounce(cb,delay=500){
+function useDebounce(cb,delay=2000){
   let timerId;
   return (...args)=>{
     console.log(args);
